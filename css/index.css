@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+body {
+    height: 100%;
+}
+footer {
+    background-color: blanchedalmond;
+    height: 30px;
+    float: bottom;
+	text-align: center;
+}
+table {
+    width: 95%;
+    align-self: center;
+    align-content: center;
+    height: 80%;
+}
+
+th {
+    background-color: rgb(130, 190, 247);
+    border-bottom: solid .5px black;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+col{
+    margin: 0;
+}
+tr {
+    border: solid 1px #000;
+    align-content: center;
+}
+tr:nth-child(odd){
+    background-color: gray;
+}
+td {
+    text-align: center;
+}
+ul {
+    list-style: none;
+}
+li {
+    display: inline;
+    padding: 0 20px 0 20px;
+    font-size: 22px;
+}
+input {
+    padding: 0 0 0 5px;
+    margin: 2px 2px 4px 0;
+    font-family: monospace;
+    width: 50%;
+    height: 25px;
+    min-width: 400px;
+    border:solid 1px #000;
+    border-radius: 10px;
+}
+
+header {
+    background-color: cornflowerblue;
+    height: 30px;
+
+}
+dialog {
+    background-color: #d3d481;
+    border: solid 2px #006699;
+    text-align: center;
+}
+dialog input{
+    text-align: center;
+}
+li:hover{
+    font-style: oblique;
+    cursor: pointer;
+}
+button {
+    min-width: 100px;
+    height: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border: solid 1px #fff;
+    border-radius: 5px;
+    margin: 2px;
+}
+button:hover {
+    cursor: pointer;
+    border: none;
+}
+.btn-primary {
+    background-color: teal;
+    color: #FFF;
+}
+.btn-success {
+    background-color: rgb(44, 197, 30);
+    color: #FFF;
+}
+.btn-cancel {
+    background-color: rgb(44, 197, 30);
+    color: #FFF;
+}
+.middle_section {
+    background-color: wheat;
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    align-content: center;
+}
+
+.current{
+    background-color: rgb(248, 246, 144);
+    border-bottom: solid 4px rgb(160, 247, 74);
+}
+#newClient {
+    float: right;
+}
+#clientForm {
+    text-align: center;
+    
+}

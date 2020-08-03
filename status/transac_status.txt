@@ -1,0 +1,1 @@
+{"Result":{"ResultType":0,"ResultCode":2001,"ResultDesc":"The initiator information is invalid.","OriginatorConversationID":"26704-2824895-1","ConversationID":"AG_20200707_00007fdf0983a26fcf7f","TransactionID":"OG70000000","ReferenceData":{"ReferenceItem":{"Key":"Occasion","Value":"INfiNItops"}}}}

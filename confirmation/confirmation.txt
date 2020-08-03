@@ -1,0 +1,31 @@
+{
+            "TransactionType": "Pay Bill",
+            "TransID": "OGB01HCBMW",
+            "TransTime": "20200711121348",
+            "TransAmount": "400.00",
+            "BusinessShortCode": "600158",
+            "BillRefNumber": "2",
+            "InvoiceNumber": "",
+            "OrgAccountBalance": "96827.00",
+            "ThirdPartyTransID": "",
+            "MSISDN": "254708374149",
+            "FirstName": "John",
+            "MiddleName": "J.",
+            "LastName": "Doe"
+        }
+        {
+            "TransactionType": "Pay Bill",
+            "TransID": "OGB51HCBN1",
+            "TransTime": "20200711121801",
+            "TransAmount": "400.00",
+            "BusinessShortCode": "600158",
+            "BillRefNumber": "2",
+            "InvoiceNumber": "",
+            "OrgAccountBalance": "97227.00",
+            "ThirdPartyTransID": "",
+            "MSISDN": "254708374149",
+            "FirstName": "John",
+            "MiddleName": "J.",
+            "LastName": "Doe"
+        }
+        

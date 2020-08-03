@@ -1,0 +1,37 @@
+form {
+    background-color: blanchedalmond;
+    align-items: center;
+    width: 350px;
+    height: 180px;
+    text-align: center;
+    padding-top: 10px;
+    border-width: 3px;
+    border-color: coral;
+    border-radius: 10;
+}
+
+form label {
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    text-align: center;
+    background-color: crimson;
+    color: white;
+    width: 100px;
+    height: 28px;
+    border-radius: 10px;
+    border-width: none;
+}
+
+input[type=text] {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+input[type=password] {
+    margin-bottom: 5px;
+    text-align: center;
+}
