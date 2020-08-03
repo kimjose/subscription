@@ -2,14 +2,6 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subscribe | Details</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <script src='js/fa-icons.js'></script>
-</head>
-
-<body>
     <?php
     require_once __DIR__ . "/models/User.php";
 
@@ -20,6 +12,15 @@
         header("Location: login.php");
     }
     ?>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe | Details</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src='js/fa-icons.js'></script>
+</head>
+
+<body>
+
     <header>
         <ul>
             <li id="li_transactions" class="current">Transactions</li>
