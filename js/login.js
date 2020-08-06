@@ -12,7 +12,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
 
 function login() {
-    var name = "kimjose";
+    var name = username.value;
     var pass = password.value;
     console.log(name+" "+pass);
     if (name != "" && pass != "") {

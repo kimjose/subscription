@@ -4,7 +4,7 @@
 	 * 
 	 */
 	namespace models;
-	require __DIR__."/../bootstrap.php";
+	require __DIR__."/../bootdb.php";
 
 	use Illuminate\Database\Eloquent\Model;
 

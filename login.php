@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    session_unset();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,16 +16,20 @@
 <body>
 
 
-    <form id="myForm">
-        <label for="username">Username</label><br>
-        <input name="username" type="text" id="username" /><br>
-        <label for="password">Password</label><br>
-        <input name="password" type="password" id="password" /><br>
-        <input type="submit" value="Login" id="loginBtn" />
-    </form>
+    <div class="container">
+
+        <form id="myForm">
+            <label style="font-weight: bold; font-size: 20px">Login to continue.</label><br>
+            <label for="username">Username</label><br>
+            <input name="username" type="text" id="username" placeholder="Enter user name" /><br>
+            <label for="password">Password</label><br>
+            <input name="password" type="password" id="password" placeholder="Enter user password" /><br>
+            <input type="submit" value="Login" id="loginBtn" />
+        </form>
+    </div>
 
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/jquery3_5_1.js" type="text/javascript"></script>
     <script src="js/login.js" type="text/javascript"></script>
 
 

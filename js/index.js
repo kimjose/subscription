@@ -117,7 +117,7 @@ inputSearch.addEventListener("input", ()=> {
     let searchString = inputSearch.value.toLowerCase();
     var rows = table.getElementsByTagName("tr");
     for (let i = 0; i < rows.length; i++) {
-        const row = rows[i];
+        const row = rows[i+1];
         row.style.display = "none";
         const rowData = row.getElementsByTagName("td");
         for (let j = 0; j < rowData.length; j++) {
@@ -188,3 +188,8 @@ document.getElementById("addClient").addEventListener("click", ()=>{
         }
     });
 });
+
+document.getElementById("closeDialog").addEventListener("click", ()=>{
+    var dialog = document.getElementById("clientDialog");
+    dialog.removeAttribute("open");
+})
