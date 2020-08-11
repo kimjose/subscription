@@ -1,1 +1,3 @@
-bootstrap.php
+bootdb.php
+credentials.json
+vendor

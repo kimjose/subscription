@@ -3,16 +3,20 @@
 // Genartes access token
 	 function generateToken()
 	{
+
+	$handle = fopen('credentials.json', 'r');
+	$data = fread($handle, filesize('credentials.json'));
+	$decoded_data = json_decode($data);
+	$consumerKey = $decoded_data->consumerKey;
+	$consumerSecret = $decoded_data->consumerSecret;
 		$url = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
 		$curl = curl_init();
 		curl_setopt($curl, CURLOPT_URL, $url);
-		$credentials = base64_encode('AegN61gHQQHDgJNGZXs9BfHQjrKp4EFw:T8RkWXM7GX1Ol2yp');
+		$credentials = base64_encode($consumerKey . ':' . $consumerSecret);
 		$headers = ['Content-Type:application/json: charset=utf8'];
 		curl_setopt($curl, CURLOPT_HTTPHEADER, array('Authorization:Basic '.$credentials));
 		curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-		//curl_setopt($curl, CURLOPT_USERPWD, 'LfHOyC6ysjhhZn6A6SgzG6gjEH2VvVfc:ohp94CE0zbe1I07V');
-		//curl_setopt($curl, CURLOPT_HEADER, false);
 
 
 		$curl_response = curl_exec($curl);

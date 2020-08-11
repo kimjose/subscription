@@ -1,29 +1,27 @@
-<?php 
-	require '../Subscribe.php';
+<?php
+require '../MobilePayment.php';
 
 
 //	header("Content-Type: application/json");
 
-	
-	use Subscribe as Subscriber;
+
+use MobilePayment as Payment;
 
 
-	$data = file_get_contents('php://input');
-
-
-
-	$logFile = "confirmation.txt";
+$data = file_get_contents('php://input');
 
 
 
-	$log = fopen($logFile, 'a');
+$logFile = "confirmation.txt";
 
 
 
-	fwrite($log, $data);
+$log = fopen($logFile, 'a');
 
-	fclose($log);
 
-	Subscriber::insertResponse($data);
 
- 
+fwrite($log, $data);
+
+fclose($log);
+
+Payment::insertResponse($data);
